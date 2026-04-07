@@ -535,8 +535,10 @@ write.table(deg_0.005Pt_P, file = "Results/Pt_P/degPt_P_0.005.csv", row.names = 
 ```{r}
 
 # Step 8.1: Volcano Plot Patients vs HP-negative
-
+# Load library "ggrepel"
 library(ggrepel)
+
+#Create directory to save Volcano plots
 res.dir <- "Plots"
 plot.dir <- file.path(res.dir, "Volcano Plots", "Pt_N")
 dir.create(plot.dir, recursive = T)
